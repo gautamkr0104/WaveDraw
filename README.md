@@ -1,8 +1,8 @@
-# HaloScribe
+# WaveDraw
 
 **A gesture-controlled digital painting application that lets you draw in mid-air using your webcam and hand tracking.**
 
-HaloScribe uses your webcam as input, tracks your hand via MediaPipe, and translates finger gestures into brush strokes, tool selections, and UI interactions — all without touching a mouse or keyboard. It renders a floating HUD over the live video feed, so you're literally painting on your camera view.
+WaveDraw uses your webcam as input, tracks your hand via MediaPipe, and translates finger gestures into brush strokes, tool selections, and UI interactions — all without touching a mouse or keyboard. It renders a floating HUD over the live video feed, so you're literally painting on your camera view.
 
 ---
 
@@ -98,7 +98,7 @@ All non-hard brushes use localized ROI-based rendering — only the region aroun
 ## 🏗️ Project Structure
 
 ```
-HaloScribe/
+WaveDraw/
 ├── main.py              # Application entry point — camera loop, gesture dispatch, compositing
 ├── hand_tracker.py      # MediaPipe hand landmark extraction and finger-state detection
 ├── tools.py             # CanvasManager — drawing engine, brush types, shape tools, undo/redo
@@ -137,7 +137,7 @@ HaloScribe/
 ```bash
 # Clone the repository
 git clone <repository-url>
-cd HaloScribe
+cd WaveDraw
 
 # Create and activate a virtual environment (optional but recommended)
 python -m venv .venv
@@ -171,7 +171,7 @@ Or on Windows, double-click `run.bat`.
 When you trigger a save (thumbs-up gesture, the save button, or hovering for 0.7s):
 
 1. The current canvas is composited onto a clean beige paper background (`#F7F4EF`)
-2. The result is saved as a timestamped PNG: `outputs/drawings/HaloScribe_YYYYMMDD_HHMMSS.png`
+2. The result is saved as a timestamped PNG: `outputs/drawings/WaveDraw_YYYYMMDD_HHMMSS.png`
 
 ---
 
